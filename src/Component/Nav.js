@@ -1,20 +1,19 @@
 import "./Nav.css";
 function Nav(props) {
-  const OnClickAboutHandler =(event)=>{
+  const OnClickAboutHandler = (event) => {
     return props.onChangeAbout(true);
-  }
+  };
   return (
     <div className="Navbar">
-      <h1>Rent App</h1>
+      <h1>
+        <a href="/">Rent App</a>
+      </h1>
       <ul>
         <li>
-          <a href="#">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
         <li>
-          <a href="#" onClick={OnClickAboutHandler}>About</a>
-        </li>
-        <li>
-          <a href="#">Profile</a>
+          <a href="/about">About</a>
         </li>
       </ul>
     </div>

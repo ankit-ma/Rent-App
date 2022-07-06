@@ -1,0 +1,11 @@
+.HomePage-control {
+  padding: 1rem;
+  background-color: blanchedalmond;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 10px;
+}
+.HomePage-control .Card {
+  background-color: azure;
+}

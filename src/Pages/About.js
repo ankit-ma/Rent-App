@@ -1,36 +1,92 @@
 import "./About.css";
+import img from "../Resources/photo.jpg";
+// import { FaMobileAlt } from "react-icons/fa";
+import { AiFillMail, AiFillGithub, AiFillFilePdf } from "react-icons/ai";
+import { BsLinkedin } from "react-icons/bs";
+import { SiLeetcode } from "react-icons/si";
+
 function About(props) {
   return (
-    <div className="about-page">
-      <h2>Ankit Kumar</h2>
-      <p>
-        I am an engineering student in University Institute of
-        Technology,Burdwan.My branch is Information Technology.
-        <br />
-        <br />
-        From my childhood i had very much keen interest in Technologies and how
-        technologies work. So i choose Engineering as career.
-        <br />
-        <br />
-        From the past 3 years of my engineering i learned many things. One thing
-        which motivates me in this career is the learning scope. Whenever i
-        think i know everything a new problem statement came up which motivates
-        me to go on.
-        <br />
-        <br />
-        In programming language, I know C, C++, Java, Python.
-        <br />
-        <br />
-        In Scripting languagae, I know JavaScript, TypeScript and also have
-        experience on their farameworks like React js and so on.
-        <br />
-        <br />
-        Have done many projects on Java and react. you can visit my gthub from
-        my conatct page to see all of them.
-        <br />
-        <br />I am looking forward to hone my knowledge and skills.
-      </p>
+    <div>
+      <div className="about">
+        <div className="mydesc">
+          <div className="imgContainer">
+            <img src={img}></img>
+            <div className="smalldesc">
+              <h1>Ankit Kumar</h1>
+              <p>Java | C/C++| Python | React Js | JavaScript </p>
+            </div>
+          </div>
+          <p>
+            <em className="dep">
+              {" "}
+              I am a final year engineering student pursing <br />
+              Information technology from University institute of technology,
+              Burdwan.
+              <br />
+              You can contact me or download my resume from below details.
+            </em>
+          </p>
+
+          <div className="details">
+            <div className="fulldetail">
+              <div style={{ textAlign: "center" }}>
+                <a href="https://bit.ly/3nQMXSQ" target="_blank">
+                  <AiFillFilePdf className="icond" />
+                </a>
+                <p>Resume</p>
+              </div>
+            </div>
+            <div className="fulldetail">
+              <div style={{ textAlign: "center" }}>
+                <a
+                  href="https://leetcode.com/ankitsharmauitbu/"
+                  target="_blank"
+                >
+                  <SiLeetcode className="icond" />
+                </a>
+
+                <p>Leetcode</p>
+              </div>
+            </div>
+            <div className="fulldetail">
+              <div style={{ textAlign: "center" }}>
+                <a>
+                  <AiFillMail className="icond" />
+                </a>
+                <p>ankitsharmauitbu@gmail.com</p>
+              </div>
+            </div>
+            <div className="fulldetail">
+              <div style={{ textAlign: "center" }}>
+                <a
+                  href="https://www.linkedin.com/in/ankit-kumar-5062191ab/"
+                  target="_blank"
+                >
+                  <BsLinkedin className="icond" />
+                </a>
+
+                <p>Linkedin</p>
+              </div>
+            </div>
+            <div className="fulldetail">
+              <div style={{ textAlign: "center" }}>
+                <a href="https://github.com/ankit-ma" target="_blank">
+                  <AiFillGithub className="icond" />
+                </a>
+
+                <p>Github</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
+  // return (
+  //   <div>
+  //     <h1>I about page</h1>
+  //   </div>
+  // );
 }
 export default About;

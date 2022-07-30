@@ -335,23 +335,28 @@ function Homepage(props) {
   const [setHouses, changeHouses] = useState(houses);
   // filter state handling
   const [setCost, changeCost] = useState(200);
-  const [setPlace, changePlace] = useState("Florida");
+  const [setPlace, changePlace] = useState("Bangalore");
   const [settype, changeType] = useState("Houses");
   const [setDate, changeDate] = useState("2022-06-11");
+  const [firstLoad, changeLoad] = useState(true);
 
   const onChagePlaceHandler = (setPlace) => {
     changePlace(setPlace);
+    changeLoad(false);
   };
   const onChangeCosthandler = (setCost) => {
     changeCost(setCost);
+    changeLoad(false);
   };
   const onChnageTypeHandler = (settype) => {
     changeType(settype);
+    changeLoad(false);
   };
 
   const onChangeDateHandler = (setDate) => {
     console.log(setDate);
     changeDate(setDate);
+    changeLoad(false);
   };
 
   const filterHouse = houses.filter((house) => {
@@ -383,7 +388,11 @@ function Homepage(props) {
           onChangeType={onChnageTypeHandler}
           onChangeDate={onChangeDateHandler}
         ></HouseFilter>
-        <HouseList item={filterHouse} />
+        {firstLoad ? (
+          <HouseList item={houses} />
+        ) : (
+          <HouseList item={filterHouse} />
+        )}
       </Card>
     </div>
   );

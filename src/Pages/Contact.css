@@ -1,0 +1,12 @@
+.contact-card {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30rem;
+  text-align: center;
+  background-color: bisque;
+}
+.contact-card a:hover {
+  color: blue;
+}

@@ -1,7 +1,7 @@
 .Navbar {
   display: flex;
   padding: 20px;
-  background-color: rgb(197, 101, 209);
+  background-color: rgb(75, 72, 75);
   /* -webkit-filter: drop-shadow(3px 3px 3px rgb(6, 6, 6)); */
   filter: drop-shadow(3px 3px 3px rgb(5, 5, 5));
 

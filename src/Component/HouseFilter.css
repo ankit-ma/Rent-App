@@ -50,6 +50,16 @@
   margin: 10px;
   width: 30%;
 }
-.place-selection select:hover {
+.place-selection select:hover,
+.place-selection-date input:hover {
   transform: scale(1.05);
+}
+.place-selection-date {
+  padding: 15px;
+  border: 5px;
+  background-color: rgb(84, 208, 126);
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+  width: 35%;
 }

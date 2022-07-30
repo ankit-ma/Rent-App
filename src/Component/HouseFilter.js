@@ -41,7 +41,7 @@ function HouseFilter(props) {
             <option value="Villa">Villa</option>
           </select>
         </div>
-        <div className="place-selection">
+        <div className="place-selection-date">
           <label>Availabilty</label>
           {/* <select value={props.selectedType} onChange={dropdownTypeHandler}>
             <option value="Houses">Houses</option>

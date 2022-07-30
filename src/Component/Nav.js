@@ -1,4 +1,5 @@
 import "./Nav.css";
+import { Link } from "react-router-dom";
 function Nav(props) {
   const OnClickAboutHandler = (event) => {
     return props.onChangeAbout(true);
@@ -6,14 +7,14 @@ function Nav(props) {
   return (
     <div className="Navbar">
       <h1>
-        <a href="/">Rent App</a>
+        <Link to="/">Rent App</Link>
       </h1>
       <ul>
         <li>
-          <a href="/contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </div>
